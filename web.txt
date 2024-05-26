@@ -1,0 +1,13 @@
+html graphics
+cs grid
+js html dom
+- learn css framework like tailwind css
+- learn javascript framework like react (library) using REACT docs
+- sonny sangha
+- next.js -> extra features
+- build projects like instagram clone
+- use javascipt as backend with node.js
+- express provides tools for APIs 
+- use mongoose to talk to database
+- build backend with instagram clone
+
