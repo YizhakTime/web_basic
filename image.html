@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            img {
+                width: 100%
+            }
+        </style>
+    </head>
+    <img src="pic_trulli.jpg" alt="Italian Trulli">
+    <!-- links to web page of image from web server and inserts into page, image is not inserted, if img tag is empty, 
+    requires src path to image, and alternate text for image, image can be in another folder -->
+    <img src="../../Downloads/a.jpg" alt="Girl in a jacket" style="width:30px;height:50px;">
+    <!-- height and width are in pixels, if not specified, then web page might flicker when loading -->
+    <img src="../../Downloads/a.jpg" alt="Girl in a jacket" width="30" height="50">
+    <!-- width, height get infleunced by style sheet, using style attribute first prevents that -->
+    <img src="https://www.w3schools.com/images/w3schools_green.jpg" alt="W3Schools.com", style="width: 50px; height: 50px;">
+    <!-- you can get images from web server, need full path -->
+    <p>
+    <a href="default.asp">
+        <img src="smiley.gif" alt="HTML tutorial" style="width:42px;height:42px;">
+    </a>
+    </p>
+    <!-- image as a link -->
+    <p>
+        <img src="https://www.w3schools.com/images/w3schools_green.jpg" alt="W3Schools.com", style="float: right;width: 50px; height: 50px;">
+        A lot to get here
+    </p>
+    <p>
+        <img src="https://www.w3schools.com/images/w3schools_green.jpg" alt="W3Schools.com", style="float: left;width: 50px; height: 50px;">
+        A lot to get here
+    </p>
+</html>

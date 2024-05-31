@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <img src="https://www.w3schools.com/images/w3schools_green.jpg" alt="W3Schools.com", style="width: 400px; height: 379px;" usemap="#attack"> 
+    <map name="attack">
+        <area shape="rect" coords="34, 44, 270, 350" href="computer.htm" onclick="alertDialog()">
+    </map>
+    <!-- rect - defines a rectangular region
+        circle - defines a circular region
+        poly - defines a polygonal region
+        default - defines the entire region
+    pair of x,y coordinates -->
+    <area shape="circle" coords="337, 300, 44" href="coffee.htm">
+    <!-- x, y coordinate of circle plus radius -->
+    <area shape="poly" coords="140,121,181,116,204,160,204,222,191,270,140,329,85,355,58,352,37,322,40,259,103,161,128,147" href="croissant.htm">
+    <!-- pairs of x,y coordinates -->
+    <script>
+        function alertDialog() {
+            alert("Clicked on box")
+        }
+        // js func to trigger on clicking image
+    </script>
+
+</html>
