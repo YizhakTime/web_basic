@@ -1,11 +1,122 @@
 <!DOCTYPE html>
 <html>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+            /* border-style: dashed; */
+            border-collapse: collapse;
+            border-color: aqua;
+            text-align: right;
+            border-spacing: 10px;
+            /* change spacing between cells */
+            /* border: 1px solid white; */
+            /* added collapse to avoid double border, adding bg color and white border = invisible border? */
+            /* background-color: aqua; */
+            /* border-radius: 50px; */
+            /* added radius to have rounded border, need to remove collapse to appear */
+        }
+
+        th, td {
+            padding-top: 10px;
+            padding-bottom: 20px;
+            padding-left: 30px;
+            padding-right: 40px;  
+            /* Cell padding is the space between the cell edges and the cell content. */
+            /* padding: 1px;       */
+        }
+
+        /* tr {
+            border-bottom: 1px solid #ddd;
+            horizontal dividers
+        } */
+
+        tr:hover {background-color: #D6EEEE;}
+
+
+        tr:nth-child(even) {
+            background-color: #D6EEEE;
+        }
+        /* to make every other row have this bg color */
+
+
+        /* td:nth-child(even) tr:nth-child(even) {
+            background-color: #D6EEEE;
+        } 
+        to make every other col have bg color
+        */
+
+        /* th, td {
+            border: 1px solid black;
+            Can add only this CSS block to make only cells rounded
+            border-radius: 10px;
+        } */
+        /* added border to table, cell rows, and cells */
+    </style>
     <head>
         <title>
             Lazy
         </title>
         <link rel="icon" href="../../Downloads/a.jpg" type="image/x-icon">
     </head>
+
+    <table style="width: 100%;">
+        <caption>Save</caption>
+        <!-- percentage notes how wide compared to parent element -->
+        <tr style="height: 200px;">
+            <!-- <colgroup>
+                <col span="4" style="background-color: chartreuse">
+              </colgroup> 
+            The <colgroup> tag must be a child of a <table> element and should be placed before any other table elements, 
+                like <thead>, <tr>, <td> etc., 
+                    but after the <caption> element, if present.
+            -->
+
+            <!-- <colgroup>
+                <col span="2" style="background-color: #D6EEEE">
+                <col span="3" style="background-color: pink">
+              </colgroup>
+              multiple col elements -->
+
+              <!-- <colgroup>
+                <col span="3">
+                <col span="2" style="background-color: pink">
+              </colgroup>
+              empty columns -->
+
+              <!-- <colgroup>
+                <col span="2">
+                <col span="3" style="visibility: collapse">
+              </colgroup>
+              hide columns             -->
+            <th style="width: 70%;">
+                <!-- can modify width of specific column -->
+                Cell
+            </th>
+            <!-- <th rowspan="2">Phone</th>, span over rows -->
+
+            <th>
+                ID
+            </th>
+            <!-- <th colspan="2">Name</th> to have it span over multiple cols-->
+        </tr>
+        <tr>
+            <!-- tr = table rows, each row MUST have same # of cells  -->
+            <th>Cells</th>
+            <td>Cell 1</td>
+            <td>Cell 2</td>
+            <!-- table data = td, we can borders with border: 1px colors.black -->
+        </tr>
+        <tr>
+            <th>Cellss</th>
+            <!-- can have headers vertically by having 1st element in each row as header -->
+            <td>
+                Cell 3
+            </td>
+            <td>
+                Cell 4
+            </td>
+        </tr>
+    </table>
 </html>
 
 <!-- small image displayed to page title in browser tab,
