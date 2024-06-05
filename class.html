@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .city {
+                display: grid;
+                background-color: chocolate;
+                color: white;
+                padding: 10px;
+            }
+            .main {
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <h2>Multiple classes</h2>
+        <button onclick="clearTags()">Clear tags</button>
+        <p class="city">You can specify multiple classes by putting a space between different names
+            Also, different html tags can have same class like p and h2 tag
+        </p>
+        <h2 class="city main">
+            London
+        </h2>
+        <h2 class="city">Paris</h2>
+        <h2 class="city">London</h2>
+        <p>Here</p>
+        <script>
+            function clearTags() {
+                var x = document.getElementsByClassName("city");
+                // get elements from class name
+                for (var i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                    // needs display attribute inside class to hide
+                }
+            }
+        </script>
+    </body>
+</html>
