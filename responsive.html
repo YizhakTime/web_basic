@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <style>
+            * {
+                box-sizing: border-box;
+            }
+            .left {
+                background-color: aquamarine;
+                padding: 20px;
+                float: left;
+                width: 20%;
+            }
+
+            .main {
+                background-color: brown;
+                padding: 20px;
+                float: left;
+                width: 60%;
+            }
+
+            .right {
+                background-color: darkmagenta;
+                padding: 20px;
+                float: left;
+                width: 20%;
+            }
+
+            @media screen and (max-width: 800px) {
+                .left, .main, .right {
+                    width: 100%;
+                }
+                
+            }
+        </style>
+    </head>
+    <!-- organzation of html: header, nav, section, article, aside, footer -->
+    <div class="left">
+        <p>Left Menu</p>
+      </div>
+      
+      <div class="main">
+        <p>Main Content</p>
+      </div>
+      
+      <div class="right">
+        <p>Right Content</p>
+      </div>
+     <p>
+        <img src="images/img_sem_elements.gif" alt="organzation of html">
+     </p>
+     <p>
+        <img src="img_girl.jpg" style="max-width:100%;height:auto;">
+        <!-- width scales up and down, max-width scales down but never more than OG size -->
+     </p>
+
+    <picture>
+        <source srcset="img_smallflower.jpg" media="(max-width: 600px)">
+        <source srcset="img_flowers.jpg" media="(max-width: 1500px)">
+        <source srcset="flowers.jpg">
+        <img src="img_flowers.jpg" alt="Flowers" style="width:auto;">
+        <!-- picture element define diff images for different browser sizes -->
+    </picture>
+    <!-- can either use bootstrap or css or bulma or tailwind-->
+    <h1 style="font-size:1vw">Hello World</h1> 
+    <!-- text that follows size of browser window -->
+     <ul>
+        <li>
+            header- Defines a header for a document or a section
+        </li>
+        <li>
+            nav - Defines a set of navigation links
+        </li>
+        <li>
+            section - Defines a section in a document
+        </li>
+        <li>
+            article - Defines an independent, self-contained content
+        </li>
+        <li>
+            aside - Defines content aside from the content (like a sidebar)
+        </li>
+        <li>
+            footer - Defines a footer for a document or a section
+        </li>
+        <li>
+            details - Defines additional details that the user can open and close on demand
+        </li>
+        <li>
+            summary - Defines a heading for the details
+            <!-- <details></details> -->
+                element
+        </li>
+     </ul>
+     <!-- there's either bootstrap, css grid, css float *not flexible and tied to doc flow, or css flexbox (fits different devices)-->
+</html>

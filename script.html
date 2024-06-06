@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <!-- head element is a container for: <title>, <style>, <meta>, <link>, <script>, and <base>.
+        container for metadata (data about data), between html and body tag -->
+        <!-- title is text only and is important for SEO  -->
+        <title>Scripts</title>
+        <style>
+            #demo {
+                color: black;
+            }
+
+            #test {
+                color: black;
+            }
+        </style>
+         <!-- <link rel="stylesheet" href="mystyle.css"> links to external file -->
+         <!-- <meta> specifies character set, page description, keywords, author of the document, and viewport settings.
+          Metadata isn't displayed on page, but used by browsers 
+         The metadata will not be displayed on the page, but is used by browsers (how to display content or reload page), by search engines (keywords)
+    -->
+
+    <!-- <meta charset="UTF-8">, character set-->
+    <!-- <meta name="keywords" content="HTML, CSS, JavaScript">, keywords for seach engines-->
+    <!-- <meta name="description" content="Free Web tutorials">, description web page -->
+    <!-- <meta name="author" content="John Doe">, author-->
+    <!-- <meta http-equiv="refresh" content="30">, refresh every 30s-->
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0">, works for all devices
+     include in all web pages, gives instructions on how to control page dimensions and scaling
+     width=device-width sets width to width of device, initial-scale sets initial zoom lvl when loaded by browser-->
+     <!-- base specifies base url for all relative urls, ONLY ONE, must have either href, target or both, 
+     imgs will add base url with its own url 
+     -->
+
+    </head>
+    <!-- <base href="https://www.w3schools.com/" target="_blank">
+    <img src="images/stickman.gif" width="24" height="39" alt="Stickman">
+    https://www.w3schools.com/images/stickman.gif -->
+    <h1>JS</h1>
+    <button type="button" onclick="document.getElementById('demo').innerHTML = Date()">
+        Click to display time
+    </button>
+    <p id="demo"></p>
+    <p id ="test">Test</p>
+    <script>
+        function changeStyle() {
+            document.getElementById('test').style.color = "red";
+        }
+    </script>
+    <button type="button" onclick="changeStyle()">Change color</button>
+    <!-- script is client-side JS, either has script elements or has external script file from src -->
+
+    <script>
+        function light(sw) {
+          var pic;
+          if (sw == 0) {
+            pic = "images/pic_bulboff.gif"
+          } else {
+            pic = "images/pic_bulbon.gif"
+          }
+          document.getElementById('myImage').src = pic;
+        }
+    </script>   
+    <img id="myImage" src="images/pic_bulboff.gif" width="100" height="180">   
+    <p>
+        <button type="button" onclick="light(1)">Light On</button>
+        <button type="button" onclick="light(0)">Light Off</button>
+    </p>
+    <noscript>Sorry, your browser does not support scripts</noscript>
+    <!-- alternate content if browser does not support script or disabled scripts -->
+</html>
+
+<!-- <img src="https://www.w3schools.com/images/picture.jpg" alt="Mountain"> 
+<img src="/images/picture.jpg" alt="Mountain"> relative path, use relative for best practices -->
