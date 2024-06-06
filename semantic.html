@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            span {
+                background-color: aqua;
+            }
+
+            div > span {
+                background-color: yellow;
+            }
+        </style>
+    </head>
+    <body>
+        <p>Non-semantic element tells nothing about it like div or span, semantic are table, border...</p>
+        <p><img src="images/img_sem_elements.gif" alt="page layout"></p>
+        <section>
+            <p>
+                section in a document like chapters, intro, news items, contact info
+            </p>
+        </section>
+        <section>
+            <p>Hard talk</p>
+        </section>
+        <article>
+            <p>
+                self-contained content like blog posts, user comments, articles
+            </p>
+        </article>
+        <div>
+            <span>
+              Span #1, in the div.
+              <span>Span #2, in the span that's in the div.</span>
+            </span>
+          </div>
+          <span>Span #3, not in the div at all.</span>
+          <!-- 2nd span is aqua since it is child of 1st span, so not direct child of div -->
+           <!-- nesting articles or sections inside of each other depends on you -->
+    </body>
+</html>
