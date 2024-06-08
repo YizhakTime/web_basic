@@ -1,6 +1,13 @@
 <!DOCTYPE html>
 <html>
-    <head></head>
+    <head>
+        <style>
+            table, th, td {
+                border: 1px solid black;
+                border-collapse: collapse;
+            }
+        </style>
+    </head>
     <title>Simple Form</title>
     <body>
         <form action="/action_page.php">
@@ -15,13 +22,169 @@
             form elements
             .
         </form> creates form for user input, container for text fields, checkboxes, radio/submit buttons -->
-        <table>
-            
-        </table>
-        <input type="text">	Displays a single-line text input field
-        <input type="radio">	Displays a radio button (for selecting one of many choices)
-        <input type="checkbox">	Displays a checkbox (for selecting zero or more of many choices)
-        <input type="submit">	Displays a submit button (for submitting the form)
-        <input type="button">	Displays a clickable button
+        <p>
+            <table title="Input Types">
+                <caption>Input Types</caption>
+                <tr>
+                  <th>Type</th>
+                  <th>Description</th>
+                </tr>
+                <tr>
+                  <td>Radio</td>
+                  <td>Displays a radio button (for selecting one of many choices)</td>
+                </tr>
+                <tr>
+                  <td>Checkbox</td>
+                  <td>Displays a checkbox</td>
+                </tr>
+                <tr>
+                  <td>Submit</td>
+                  <td>Displays a submit button (for submitting the form)</td>
+                </tr>
+                <tr>
+                  <td>Button</td>
+                  <td>Displays a clickable button</td>
+                </tr>
+                <tr>
+                  <td>Text</td>
+                  <td>Displays a single-line text input field</td>
+                </tr>
+              </table>
+        </p>
+        <p>
+            Label tag defines label for many form elements, helps with screen readers and with toggling the region <br>
+            The for attribute of the label tag should be equal to the id attribute of the input element to bind them together
+        </p>
+        <p>
+            Choose favorite drink
+        </p>
+        <form>
+            <input type="radio" id="test" name="Drink" value="Orange">
+            <label for="test">Orange</label><br>
+            <input type="radio" id="now" name="Drink" value="Apple">
+            <label for="now">Apple</label><br>
+            <input type="radio" id="zeke" name="Drink" value="Milk">
+            <label for="zeke">Milk</label>
+            <!-- Have same name for all radio buttons to have only one choice selected, label has actual label text-->
+        </form>
+        <p>Checkboxes</p>
+        <form action="https://w3schools.com">
+            <input type="checkbox" id="scrat" name="Programming" value="Java">
+            <label for="scrat">Java</label><br>
+            <input type="checkbox" id="scrat2" name="Programming" value="Python">
+            <label for="scrat2">Python</label><br>
+            <input type="checkbox" id="scrat3" name="Programming" value="C++">
+            <label for="scrat3">C++</label><br>
+            <input type="submit" value="Submit">
+        </form>
+        <p>If you submit form, data will be sent to a page called w3schools</p>
+        <p>
+            action defines action to be performed when form is submitted, usually to a file on a server <br>
+            If ignored, default is set to current page
+        </p>
+        <p>
+          Target attribute specifies where to display response after submitting form <br>
+          <ul>
+            <li>
+              _blank means it will open in new tab
+            </li>
+            <li>
+              _self means response will open in current window/tab
+            </li>
+            <li>
+              _parent means it will be opened in parent frame
+            </li>
+            <li>
+              _top means it will be opened in full body of the window
+            </li>
+          </ul>
+        </p>
+        <p>
+          method attribute specifies HTTP method to use when submitting form data <br>
+          Can either be HTTP GET or HTTP POST <br>
+          With POST, the values are not in address bar, but with GET, the values are in the address bar
+        </p>
+        <p>
+          GET appends form data to URL, do not use to send sensitive info, useful for when user wants to save result <br>
+          or for sending non-secure data like query strings
+        </p>
+        <p>
+          Appends form data inside body of HTTP request, no size limitations, form submissions cannot be bookmarked <br>
+          Always POST to send sensitive info
+        </p>
+        <p>
+          <!-- <form action="/action_page.php" autocomplete="on">  -->
+            autocomplete feature in form complete values before off what user entered before
+        </p>
+        <p>
+          <!-- <form action="/action_page.php" novalidate>  -->
+          specifies that form data should not be validated 
+        </p>
+        <form>
+          <label for="colors">
+            Choose a color
+          </label>
+          <select name="colors" id="colors">
+            <option value="Blue">Blue</option>
+            <option value="Green">Green</option>
+            <option value="Red">Red</option>
+          </select>
+          <input type="submit">
+        </form>
+        <br>
+        <!-- <option value="fiat" selected>Fiat</option>, use selected to have a default option-->
+        <!-- <select id="cars" name="cars" size="3">, size=3 display 3 options in dropdown menu instead of 1 at a time-->
+        <!-- <select id="cars" name="cars" size="4" multiple>Select multiple options when pressing Ctrl</select> -->
+        <form>
+          <textarea name="message" rows="10" cols="30">
+            The cat was playing in the garden.
+          </textarea> 
+          <br><br>
+          <input type="submit">
+          <!-- rows = number of lines, and cols = width  -->
+        </form>
+        <br>
+        <!-- <textarea name="message" style="width:200px; height:600px;">
+          The cat was playing in the garden.
+        </textarea>, width and columns cane defined with CSS also -->
+        <button type="button" onclick="alert('Hello World!')">Click Me!</button>
+        <p>Always specify type for button, diff browsers might use diff default types for button</p>
+        <form>
+          <fieldset>
+            <legend>Personalia:</legend>
+            <label for="fname">First name:</label><br>
+            <input type="text" id="fname" name="fname" value="John"><br>
+            <label for="lname">Last name:</label><br>
+            <input type="text" id="lname" name="lname" value="Doe"><br><br>
+            <input type="submit" value="Submit">
+          </fieldset>
+        </form>
+        <p>Fieldset groups releated data in a form and includes legend</p>
+        <p>Datalist showcases predefined options for input element in dropdown menu <br>
+        list attribute of input MUST match id of datalist element
+        </p>
+        <form>
+          <input list="browsers">
+          <datalist id="browsers">
+            <option value="Edge">
+            <option value="Firefox">
+            <option value="Chrome">
+            <option value="Opera">
+            <option value="Safari">
+          </datalist>
+          <input type="submit">
+        </form> 
+        <p>Showscases result from calculation</p>
+        <form
+          oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+          0
+          <input type="range" id="a" name="a" value="50">
+          100 +
+          <input type="number" id="b" name="b" value="50">
+          =
+          <output name="x" for="a b"></output>
+          <br><br>
+          <input type="submit">
+        </form>
     </body>
 </html>
