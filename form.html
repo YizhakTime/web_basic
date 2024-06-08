@@ -10,6 +10,7 @@
     </head>
     <title>Simple Form</title>
     <body>
+        <p>This is a text form</p>
         <form action="/action_page.php">
             <label for="fname">First name:</label><br>
             <input type="text" id="fname" name="fname" value="John"><br>
@@ -17,6 +18,7 @@
             <input type="text" id="lname" name="lname" value="Doe"><br><br>
             <input type="submit" value="Submit">
         </form>
+        <p>Excluding name attribute from submit button gives it default name such as "Submit"</p>
         <!-- <form>
             .
             form elements
@@ -39,7 +41,7 @@
                 </tr>
                 <tr>
                   <td>Submit</td>
-                  <td>Displays a submit button (for submitting the form)</td>
+                  <td>Displays a submit button (for submitting the form) and has script to process input</td>
                 </tr>
                 <tr>
                   <td>Button</td>
@@ -186,5 +188,17 @@
           <br><br>
           <input type="submit">
         </form>
+        <p>
+            This is a input type with password and username. Notice that chars are hidden with circles. 
+        </p>
+        <form>
+            <label for="username">Username</label><br>
+            <input type="text" id="username" name="username"><br>
+            <label for="pass">Password</label><br>
+            <input type="password" id="pass" name="pass"><br>
+            <input type="submit">
+        </form><br>
+
+
     </body>
 </html>
