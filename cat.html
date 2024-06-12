@@ -7,6 +7,7 @@
      <!-- defines title for SEO and for browser -->
     </head>
     <body>
+        <main>
         <h1>
             CatPhotoApp 
         </h1>
@@ -55,6 +56,51 @@
             <p>Cats <b>hate</b> other cats</p>
         </div>
         <h2>Cat Form</h2>
-        
+        </main>
+        <p>Is your cat an indoor or outdoor cat?</p>
+        <div style="border-style: solid; border-color: darkgray;">
+            <form>
+                <label for="outdoor"></label>
+                <input type="radio" id="outdoor" name="personality" value="Outdoor">
+                Outdoor
+                <label for="indoor"></label>
+                <input type="radio" id="indoor" name="personality" value="Indoor">
+                Indoor
+            </form>
+        </div>
+        <p>What's your cat's personality?</p>
+        <div style="border-style: solid; border-color: darkgray;">
+            <label for="loving"></label>
+            <input type="checkbox" id="loving" name="loving" value="loving">
+            loving
+            <label for="lazy"></label>
+            <input type="checkbox" id="lazy" name="lazy" value="lazy">
+            lazy
+            <label for="energetic"></label>
+            <input type="checkbox" id="energetic" name="energetic" value="energetic">
+            energetic
+        </div>
+        <form>
+            <label for="photo"></label>
+            <input type="text" id="photo" name="photo" placeholder="cat photo URL" required>
+            <input type="submit" value="Submit" 
+            onclick="validate()">
+            <!-- <button type="button" onclick="alert('Hello World!')">Click Me!</button> -->
+        </form>
+        <script>
+            function validate() {
+                let theText = document.getElementById("photo");
+                if (theText.value != "") {
+                    return alert('Normally this form would be submitted! It works. This will be submitted to: https://freecatphotoapp.com/submit-cat-photo');
+                }
+
+                else {
+                    return;
+                }
+            }
+        </script>
+        <p>
+            No Copyright - <a href="https://www.freecodecamp.org/">freeCodeCamp.org</a>
+        </p>
     </body>
 </html>
