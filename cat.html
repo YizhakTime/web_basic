@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
+        <meta charset="utf-8">
         <title>
-            Cats app
+            CatPhotoApp
         </title>
      <!-- defines title for SEO and for browser -->
     </head>
@@ -59,29 +60,27 @@
         </section>
         <section>
             <h2>Cat Form</h2>
-            <p>Is your cat an indoor or outdoor cat?</p>
-            <div style="border-style: solid; border-color: darkgray;">
+            <!-- <p>Is your cat an indoor or outdoor cat?</p> -->
+            <fieldset>
+                <legend>
+                    Is your cat an indoor or outdoor cat?
+                </legend>
                 <form action="https://freecatphotoapp.com/submit-cat-photo">
-                    <label for="outdoor"></label>
-                    <input type="radio" id="outdoor" name="personality" value="outdoor">
-                    Outdoor
-                    <label for="indoor"></label>
+                    <input type="radio" id="outdoor" name="personality" value="outdoor" checked>
+                    <label for="outdoor">Outdoor</label>
                     <input type="radio" id="indoor" name="personality" value="indoor">
-                    Indoor
+                    <label for="indoor">Indoor</label>
                 </form>
-            </div>
-            <p>What's your cat's personality?</p>
-            <div style="border-style: solid; border-color: darkgray;">
-                <label for="loving"></label>
-                <input type="checkbox" id="loving" name="loving" value="loving">
-                loving
-                <label for="lazy"></label>
-                <input type="checkbox" id="lazy" name="lazy" value="lazy">
-                lazy
-                <label for="energetic"></label>
-                <input type="checkbox" id="energetic" name="energetic" value="energetic">
-                energetic
-            </div>
+            </fieldset>
+            <fieldset>
+                <legend>What's your cat's personality?</legend>
+                <input type="checkbox" id="loving" name="personality" value="loving" checked>
+                <label for="loving">Loving</label>
+                <input type="checkbox" id="lazy" name="personality" value="lazy">
+                <label for="lazy">Lazy</label>
+                <input type="checkbox" id="energetic" name="personality" value="energetic">
+                <label for="energetic">Energetic</label>
+            </fieldset>
             <form>
                 <label for="photo"></label>
                 <input type="text" id="photo" name="photo" placeholder="cat photo URL" required>
@@ -101,10 +100,12 @@
                     }
                 }
             </script>
-            <p>
-                No Copyright - <a href="https://www.freecodecamp.org/">freeCodeCamp.org</a>
-            </p>
         </section>
     </main>
+    <footer>
+        <p>
+            No Copyright - <a href="https://www.freecodecamp.org/">freeCodeCamp.org</a>
+        </p>
+    </footer>
     </body>
 </html>
