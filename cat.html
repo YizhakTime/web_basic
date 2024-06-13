@@ -11,98 +11,100 @@
         <h1>
             CatPhotoApp 
         </h1>
-        <h2>
-            Cat Photos
-        </h2>
-        <p>
-            See more 
-            <a href="https://www.freecatphotoapp.com/" target="_blank">
-                cat photos
+        <section>
+            <h2>
+                Cat Photos
+            </h2>
+            <p>
+                See more 
+                <a href="https://www.freecatphotoapp.com/" target="_blank">
+                    cat photos
+                </a>
+                in our gallery.
+            </p>
+            <a href="https://freecatphotoapp.com">
+                <img src="images/relaxing-cat.jpg" style="height: 320px; width: 320px;" alt="cat relaxing">
             </a>
-            in our gallery.
-        </p>
-        <a href="https://freecatphotoapp.com">
-            <img src="images/relaxing-cat.jpg" style="height: 320px; width: 320px;" alt="cat relaxing">
-        </a>
-        <h2>
-            Cat Lists
-        </h2>
-        <h3>
-            Things cats love:
-        </h3>
-        <ul>
-            <li>
-                cat nip
-            </li>
-            <li>
-                laser pointers
-            </li>
-            <li>
-                lasagna
-            </li>
-        </ul>
-        <div style="margin: 20px;">
-            <img src="images/lasagna.jpg" alt="lasagna">
-            <p>Cats <i>love</i> lasagna</p>
-        </div>
-        <h3>
-            Top 3 things cats hate:
-        </h3>
-        <ol>
-            <li>flea treatment</li>
-            <li>thunder</li>
-            <li>other cats</li>
-        </ol>
-        <div style="margin: 20px;">
+        </section>
+        <section>
+            <h2>Cat Lists</h2>
+            <h3>Things cats love:</h3>
+            <ul>
+                <li>
+                    cat nip
+                </li>
+                <li>
+                    laser pointers
+                </li>
+                <li>
+                    lasagna
+                </li>
+            </ul>
+            <figure>
+                <img src="images/lasagna.jpg" alt="lasagna">
+                <figcaption>Cats <em>love</em> lasagna</figcaption>
+            </figure>
+            <h3>
+                Top 3 things cats hate:
+            </h3>
+            <ol>
+                <li>flea treatment</li>
+                <li>thunder</li>
+                <li>other cats</li>
+            </ol>
+        <figure>
             <img src="images/cats.jpg" alt="cats">
-            <p>Cats <b>hate</b> other cats</p>
-        </div>
-        <h2>Cat Form</h2>
-        </main>
-        <p>Is your cat an indoor or outdoor cat?</p>
-        <div style="border-style: solid; border-color: darkgray;">
+            <figcaption>Cats <strong>hate</strong> other cats</figcaption>
+        </figure>
+        </section>
+        <section>
+            <h2>Cat Form</h2>
+            <p>Is your cat an indoor or outdoor cat?</p>
+            <div style="border-style: solid; border-color: darkgray;">
+                <form action="https://freecatphotoapp.com/submit-cat-photo">
+                    <label for="outdoor"></label>
+                    <input type="radio" id="outdoor" name="personality" value="outdoor">
+                    Outdoor
+                    <label for="indoor"></label>
+                    <input type="radio" id="indoor" name="personality" value="indoor">
+                    Indoor
+                </form>
+            </div>
+            <p>What's your cat's personality?</p>
+            <div style="border-style: solid; border-color: darkgray;">
+                <label for="loving"></label>
+                <input type="checkbox" id="loving" name="loving" value="loving">
+                loving
+                <label for="lazy"></label>
+                <input type="checkbox" id="lazy" name="lazy" value="lazy">
+                lazy
+                <label for="energetic"></label>
+                <input type="checkbox" id="energetic" name="energetic" value="energetic">
+                energetic
+            </div>
             <form>
-                <label for="outdoor"></label>
-                <input type="radio" id="outdoor" name="personality" value="Outdoor">
-                Outdoor
-                <label for="indoor"></label>
-                <input type="radio" id="indoor" name="personality" value="Indoor">
-                Indoor
+                <label for="photo"></label>
+                <input type="text" id="photo" name="photo" placeholder="cat photo URL" required>
+                <input type="submit" value="Submit" 
+                onclick="validate()">
+                <!-- <button type="button" onclick="alert('Hello World!')">Click Me!</button> -->
             </form>
-        </div>
-        <p>What's your cat's personality?</p>
-        <div style="border-style: solid; border-color: darkgray;">
-            <label for="loving"></label>
-            <input type="checkbox" id="loving" name="loving" value="loving">
-            loving
-            <label for="lazy"></label>
-            <input type="checkbox" id="lazy" name="lazy" value="lazy">
-            lazy
-            <label for="energetic"></label>
-            <input type="checkbox" id="energetic" name="energetic" value="energetic">
-            energetic
-        </div>
-        <form>
-            <label for="photo"></label>
-            <input type="text" id="photo" name="photo" placeholder="cat photo URL" required>
-            <input type="submit" value="Submit" 
-            onclick="validate()">
-            <!-- <button type="button" onclick="alert('Hello World!')">Click Me!</button> -->
-        </form>
-        <script>
-            function validate() {
-                let theText = document.getElementById("photo");
-                if (theText.value != "") {
-                    return alert('Normally this form would be submitted! It works. This will be submitted to: https://freecatphotoapp.com/submit-cat-photo');
-                }
+            <script>
+                function validate() {
+                    let theText = document.getElementById("photo");
+                    if (theText.value != "") {
+                        return alert('Normally this form would be submitted! It works. This will be submitted to: https://freecatphotoapp.com/submit-cat-photo');
+                    }
 
-                else {
-                    return;
+                    else {
+                        return;
+                    }
                 }
-            }
-        </script>
-        <p>
-            No Copyright - <a href="https://www.freecodecamp.org/">freeCodeCamp.org</a>
-        </p>
+            </script>
+            <p>
+                No Copyright - <a href="https://www.freecodecamp.org/">freeCodeCamp.org</a>
+            </p>
+        </section>
+    </main>
     </body>
 </html>
