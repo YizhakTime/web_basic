@@ -14,6 +14,15 @@
                 text-align: center;
                 color: navy;
             }
+
+            h1.tag {
+                text-align: center;
+                color:darkseagreen
+            }
+
+            h1.tag2 {
+                font-size: 300%;
+            }
         </style>
     </head>
     <body>
@@ -45,5 +54,58 @@
                 attribute selectors: select elements based on an attribute or attribute value
             </li>
         </ul>
+        <p class="center">
+            All elements with this class will have this attribute
+        </p>
+        <h1 class="tag">
+            Header
+        </h1>
+        <h2 class="tag">Release</h2>
+        <p>Only h2 elements with class="tag" will have this attribute</p>
+        <h1 class="tag tag2">Soul</h1>
+        <p>
+            HTML elements can refer to multiple classes. Class name cannot start with a number. 
+        </p>
+        <!-- * {
+            text-align: center;
+            color: blue;
+          } select every element in page-->
+
+        <!-- h1, h2, p {
+            text-align: center;
+            color: red;
+        } you can group selectors together-->
+        <!-- <head>
+            <link rel="stylesheet" href="mystyle.css">
+            </head>, you can link external spreadsheet inside link tag inside head tag, file must have .css, no HTML tags -->
+        
+        <!-- <head>
+            <style>
+            body {
+                background-color: linen;
+            }
+            
+            h1 {
+                color: maroon;
+                margin-left: 40px;
+            }
+            </style>
+        </head> 
+        inline CSS defined in style tag inside head tag, may be used if single HTML page has unique style
+        -->
+        <!-- <h1 style="color:blue;text-align:center;">This is a heading</h1>
+        <p style="color:red;">This is a paragraph.</p>, apply style attribute to relevant tags, can get wordy-->
+        <p>
+            If attributes have been defined for the same element in different style sheets, the last read style sheet will be used. 
+        </p>
+        <p>Order of styles</p>
+        <ol>
+            <li>Inline style (inside an HTML element)
+            </li>
+            <li>External and internal style sheets (in the head section)
+            </li>
+            <li>Browser default
+            </li>
+        </ol>
     </body>
 </html>
