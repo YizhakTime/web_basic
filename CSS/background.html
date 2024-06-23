@@ -2,6 +2,9 @@
 <html>
     <head>
         <style>
+            /* body {
+                background-image: url("paper.gif");
+            } */
 
         </style>
     </head>
@@ -18,5 +21,31 @@
             background: rgba(0, 128, 0, 0.3) /* Green background with 30% opacity */
         }, avoids applying background-color to child elements-->
         
+        <p>
+            Having background-image covers entire background of element, it can be used for p-tags and other elements
+        </p>
+        <p>
+            Having background-repeat: repeat-x in any element will prevent background img from repeating in horizontal direction
+        </p>
+        <p>
+            Having background-repeat: repeat-y in any element will prevent background img from repeating in vertical direction
+        </p>
+        <p>
+            Having background-repeat: no-repeat in any element will prevent background img from repeating
+        </p>
+        <p>
+            The background-position: right top specifies the position of background img
+        </p>
+        <p>
+            The background-attachment: fixed specifies whether background img should be scrolled or fixed with rest of page
+            <br>fixed will scroll with page, scroll will not scroll with page
+        </p>
+        <p>
+            background: #ffffff url("img_tree.png") no-repeat right top;
+        </p>
+        <p>
+            background-color, background-image, background-repeat, background-attachment, background-position can be used in single line
+            <br> Must occur in this order, but some entries can be missing
+        </p>
     </body>
 </html>

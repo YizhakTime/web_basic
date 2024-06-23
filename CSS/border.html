@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style></style>
+    </head>
+    <body>
+        <p>
+            border-style defines type of border like dotted, dashed, solid, double, but border-style has to be defined 
+            and border-width specifies width
+        </p>
+        <p style="border-style: solid; border-width: 5px 20px;">
+            border width can have 4 values: top, right, bottom, left border
+        </p>
+        <p style="border-style: solid; border-color: aqua gold magenta green;">
+            border-color specifies color of border, can be through name, rgb, hsl, hsla, hex, transparent
+            <br>Since border has 4 sides, you can give border multiple colors for all of its sides
+        </p>
+        <p style="border-top-style: dotted; border-bottom-style: dashed; border-left-style: groove; border-right-style: ridge;">
+            You can specify which borders have different styles
+        </p>
+        <p>
+            You could also use this format: border-style: dotted solid double dashed
+            <br>order is as follow for 4 sides: top, right, bottom, left
+        </p>
+        <p>
+            If border-style has 3 borders: border-style: dotted solid double; top is dotted, right and left are solid, and bottom is double
+        </p>
+        <p>
+            If border-style has 2 borders: border-style: dotted solid; top/bottom are dotted, left/right are solid, 
+            this works with border-color and border width
+        </p>
+        <p>
+            border: 5px solid red; follows border attributes as border-width, border-style, border-color 
+            <br>This does it for just one side: border-left: 6px solid red;
+        </p>
+        <p style="border: 6px solid red; border-radius: 5px;">
+            border-radius add rounded borders to element
+        </p>
+        <p>
+            Margin is used to create space around elements, outside defined borders, you can specify the margin for each side of the border
+            <br>Margin can have these values: auto (browser calculates margin), length, % margin percentage of width of containing element
+            <br>inherit specifies margin that should be inherited from parent element
+        </p>
+        <p>
+            These are all of the directions for margin: margin-top: 100px, margin-bottom: 100px, margin-right: 150px, margin-left: 80px;
+        </p>
+        <p>
+            margin: 25px 50px 75px 100px is shorthand for specifiying margin-top, margin-bottom, etc...
+        </p>
+        <p>
+            margin: 25px 50px 75px is 3 sided, top is 25px, right/left is 50px, and bottom is 75px
+        </p>
+        <p>
+            margin: 25px 50px; top/bottom is 25px and left/right is 50px
+        </p>
+        <p style="margin: 25px;">
+            shorthand value for all 4 margins
+        </p>
+    </body>
+</html>
