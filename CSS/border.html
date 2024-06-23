@@ -1,7 +1,15 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <style></style>
+        <style>
+            div.r {
+                border: 1px solid red;
+                margin-left: 300px;
+            }
+            h2.ex1 {
+                margin-left: inherit;
+            }
+        </style>
     </head>
     <body>
         <p>
@@ -56,5 +64,19 @@
         <p style="margin: 25px;">
             shorthand value for all 4 margins
         </p>
+        <div style="width: 300px; border: 1px solid red; margin: auto;">
+            Auto horizontal centers element within container between left and right margins
+        </div>
+        <div class="r">
+            <h2 class="ex1">Child element can inherit from parent element</h2>
+        </div>
+        <!-- h1 {
+            margin: 0 0 50px 0;
+        }
+          
+        h2 {
+            margin: 20px 0 0 0;
+        }, h1 has bottom margin of 50px and h2 has top margin of 20px, the vertical margin between h1 and h2 is 70px, but
+        due to margin collapse, it is 50px since they would end up overlapping, so it stops before it occurs-->
     </body>
 </html>

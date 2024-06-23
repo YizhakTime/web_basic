@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style></style>
+    </head>
+    <body>
+        <p>Padding property generates space around element's content inside any defined border, there are elements for ALL 4 sides
+            <br>
+            padding-top, padding-left, padding-right, padding-bottom
+            <br>
+            Attributes are length, % (padding in % of width of containing element), 
+            <br>
+            inherit (which padding to be inherited from parent element), negative values are NOT allowed
+        </p>
+        <div style="border: 1px solid black; background-color: lightblue; padding-top: 50px; padding-right: 30px; padding-bottom: 30px; padding-left: 80px;">
+            Has 4 sides with different paddings
+        </div>
+        <p>
+            All of these properties can be simplified into one property: 
+            <br>padding: 25px 50px 75px 100px, top has 25px, right has 50px, bottom has 75px, left has 100px
+            <br>padding: 25px 50px 75px, top has 25px, right/left are 50px, and bottom is 75px
+            <br>With 2 values top/bottom has 1st value, right/left have 2nd value, with only ONE value, ALL paddings have the same value
+        </p>
+        <p>
+            width usually specifies width of element's content area, 
+            <br>so if element has specified width, padding will be added to total width of element
+        </p>
+        <div style="width: 300px; background-color: yellow;">
+            First div
+        </div>
+        <div style="width: 300px; padding: 25px; background-color: lightblue;">
+            300px + 25px (left) + 25px (right) = 350px
+        </div>
+        <br>
+        <div style="width: 300px; padding: 25px; box-sizing: border-box; background-color: lightblue;">
+            Compare
+        </div>
+
+    </body>
+</html>
