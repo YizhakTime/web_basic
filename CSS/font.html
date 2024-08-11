@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .p1 {
+                font-family: 'Courier New', Courier, monospace, serif;
+            }
+        </style>
+    </head>
+    <body>
+        <p class="p1">
+            Have desired font as first font and have generic font as last font for browser to use
+        </p>
+        <p>
+            There's no 100% web-safe font, so include list of web-safe fonts in font-family to be safe
+        </p>
+        <p>
+            Include arial, verdana, TNR, Tahoma, Georgia, ...
+        </p>
+        <p>
+            Other font fallbacks are serif, sans-serif, monospace, cursive, and fantasy
+        </p>
+        <p>
+            font-style allows for italics, font-weight specifies weight of font, font-variant allows small-caps font -> all uppercase 
+            but OG uppercase are bigger
+        </p>
+        <p>
+            font-size sets size of text, can be absolute (set size and cannot be modified) or 
+            relative (size relative to elements/changes text ), 
+        </p>
+        <p>
+            use vw or viewport-width to see how text changes following size of the browser
+            <!-- <h1 style="font-size:10vw">Hello World</h1> -->
+        </p>
+        <p>
+            To use google fonts, use stylesheet in link tag along with api_key
+            <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia"> -->
+        </p>
+        <p>
+            To use multiple Google fonts, use the (|) symbol in the href tag
+            <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide|Sofia|Trirong"> -->
+        </p>
+        <p>
+            Use (|) to attach multiple effects, effects start with font-effect and then name of effect
+            <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=neon|outline|emboss|shadow-multiple"> -->
+            <!-- <h1 class="font-effect-neon">Neon Effect</h1> -->
+        </p>
+        <p>
+            The font can be shortened to font-style, font-variant, font-weight, font-size/line-height, and font-family.
+            font-size and font-family are required
+        </p>
+    </body>
+</html>
