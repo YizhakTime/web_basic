@@ -3,7 +3,9 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    padding: 20px;
 }
+
 .date {
     font-size: 20px;
     font-style: italic;
@@ -20,14 +22,31 @@ body {
 }
 
 .item p {
+    margin-bottom: 5px;
     display: inline-block;
 }
 
 .div1 {
     text-align: center;
     width: 80%;
+    max-width: 500px;
     /* height: 900px; */
     margin: auto;
     /* if element is NOT 100% wide, use margin auto to center it */
     background-color: burlywood;
+    padding: 20px;
+}
+
+.bottom-line {
+    margin-top: 25px;
+}
+
+hr {
+    background-color: brown;
+    height: 2px;
+    border-color: transparent;
+}
+
+a:hover {
+    color: brown;
 }
