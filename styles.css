@@ -3,18 +3,30 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    background-color: brown;
 }
 .date {
     font-size: 20px;
     font-style: italic;
 }
 
+.flavor {
+    text-align: left;
+    width: 49%;
+}
+
+.price {
+    text-align: right;
+    width: 49%;
+}
+
+.item p {
+    display: inline-block;
+}
+
 .div1 {
     text-align: center;
-    width: 700px;
-    height: 900px;
-    border: 1px solid violet;
+    width: 80%;
+    /* height: 900px; */
     margin: auto;
     /* if element is NOT 100% wide, use margin auto to center it */
     background-color: burlywood;
