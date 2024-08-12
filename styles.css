@@ -6,6 +6,16 @@ body {
     padding: 20px;
 }
 
+h1 {
+    font-weight: bold; 
+    margin-top: 0; 
+    margin-bottom: 15px;
+}
+
+h2 {
+    font-weight: bold;
+}
+
 .date {
     font-size: 20px;
     font-style: italic;
@@ -49,4 +59,8 @@ hr {
 
 a:hover {
     color: brown;
+}
+
+.address {
+    margin-bottom: 5px;
 }
