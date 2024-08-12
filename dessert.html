@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
         <title>
             Cafe Menu
         </title>
@@ -12,11 +12,41 @@
                 background-size: cover;
                 background-attachment: fixed;
             }
+            .date {
+                font-size: 20px;
+                font-style: italic;
+            }
+
+            .div1 {
+                text-align: center;
+                width: 700px;
+                height: 900px;
+                border: 1px solid violet;
+                margin: auto;
+                /* if element is NOT 100% wide, use margin auto to center it */
+                background-color: burlywood;
+            }
         </style>
     </head>
     <body>
-        <div style="width: 500px; height: 700px; border: 1px solid violet; margin: auto; background-color: burlywood;">
+        <main>
+            <div class="div1">
+                <h1 style="font-weight: bold;">
+                    CAMPER CAFE
+                </h1>
+                <p class="date">
+                    Est. 2020
+                </p>
+                <div style="border: 2px solid maroon; margin: 0px 10px;">
+                    <!-- with only 2 values, 1st value is applied to top/bottom and 2nd value is applied to left/right -->
+                </div>
+                <section>
 
-        </div>
+                </section>
+                <section>
+
+                </section>
+            </div>
+        </main>
     </body>
 </html>
